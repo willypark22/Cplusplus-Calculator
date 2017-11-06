@@ -57,4 +57,4 @@ The base class has been predefined in the command.h file. It has two functions `
 There are two exceptions; the `OpCommand` class, which will only take in a value and will create a single Op composite node as the commands data, and the `SqrCommand` class, which will only take in a subtree (which is necessary for creating a Sqr composite node).
 
 ## Submission
-To receive credit for this lab you must show an example program to your TA that demonstrates the full functionality of this pattern. Once you have demo’d to your TA, submit a tarball of your code to the lab submission on iLearn. Your code should be fully merged, committed, and pushed to your github repo. 
+To receive credit for this lab you must show an example program to your TA that demonstrates the full functionality of this pattern. Once you have demo’d to your TA, submit a screenshot of your push to your github. 
