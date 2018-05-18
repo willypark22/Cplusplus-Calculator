@@ -44,7 +44,12 @@ class SubCommand : public Command {
 };
 
 class MultCommand : public Command {
-	//MultCommand Code Here
+	public:
+		MultCommand(Command* c, double value) {
+			Op* lhs = new Op(c->execute());
+			Op* rhs = new Op(value);
+			root = new Mult(lhs,rhs);
+		};
 };
 
 class SqrCommand : public Command {
