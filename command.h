@@ -26,11 +26,16 @@ class OpCommand : public Command {
 };
 
 class AddCommand : public Command {
-	//AddCommand Code Here
+	public:
+		AddCommand(Command* c, double value) {
+			Op* lhs = new Op(c->execute());
+			Op* rhs = new Op(value);
+			root = new Add(lhs, rhs);
+		};
 };
 
 class SubCommand : public Command {
-	//SubCommand Code Here
+	
 };
 
 class MultCommand : public Command {
