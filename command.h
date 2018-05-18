@@ -35,7 +35,12 @@ class AddCommand : public Command {
 };
 
 class SubCommand : public Command {
-	
+	public:
+		SubCommand(Command* c, double value) {
+			Op* lhs = new Op(c->execute());
+			Op* rhs = new Op(value);
+			root = new Sub(lhs, rhs);
+		};	
 };
 
 class MultCommand : public Command {
