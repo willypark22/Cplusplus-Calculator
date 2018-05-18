@@ -18,7 +18,11 @@ class Command {
 };
 
 class OpCommand : public Command {
-	//OpCommand Code Here
+	public:
+		OpCommand(double value) {
+			init = 1;
+			root = new Op(value);
+	};
 };
 
 class AddCommand : public Command {
